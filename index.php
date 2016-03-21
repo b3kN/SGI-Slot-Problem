@@ -13,7 +13,10 @@
       // Initiate database
       init('slots');
     
+      // If path is set in browser URL
       if (isset($_GET['path'])) {
+        
+        // Switch case to demonstrate each example
         switch ($_GET['path']) {
           case 'bgWin':
             validate('happy', 123123, 25, 500);
